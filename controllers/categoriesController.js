@@ -106,5 +106,5 @@ export {
   categories_get,
   categories_transaction_sum,
   categories_post,
-  category_delete,
+  category_delet,
 };
