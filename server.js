@@ -59,7 +59,7 @@ app.use("/api", authRoutes);
 app.use("/api", userRoutes);
 app.use("/api", transactionRoutes);
 app.use("/api", categoriesRoutes);
-app.use("/", (req, res) => {
+app.use("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "clientBuild", "index.html"));
 });
 
