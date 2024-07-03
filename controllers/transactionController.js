@@ -1,4 +1,4 @@
-import prisma from "../constats/config";
+import prisma from "../constats/config.js";
 import { DateTime } from "luxon";
 import { z } from "zod";
 

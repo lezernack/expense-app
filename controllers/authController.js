@@ -1,4 +1,4 @@
-import prisma from "..constats/config.js";
+import prisma from "../constats/config.js";
 import bcrypt from "bcrypt";
 import { z } from "zod";
 
