@@ -15,3 +15,35 @@ const postTr = async (params) => {
 };
 
 const useTransactionDelete = () => useMutation("deleteTr", deleteTr);
+const useTransactionsGet = ({
+  firstDate,
+  lastDate,
+  category,
+  dateSort,
+  priceSort,
+  skip,
+  take,
+  key,
+  enabled,
+}) =>
+  useQuery(
+    key,
+    () =>
+      getTrs({
+        firstDate,
+        lastDate,
+        category,
+        dateSort,
+        priceSort,
+        skip,
+        take,
+      }),
+    {
+      refetchOnWindowFocus: false,
+      enabled: enabled || false,
+      keepPreviousData: true,
+    }
+  );
+
+const useTransactionsPost = () => useMutation("postTransaction", postTr);
+export { useTransactionsGet, useTransactionDelete, useTransactionsPost };
