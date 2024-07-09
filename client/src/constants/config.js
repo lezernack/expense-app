@@ -11,5 +11,5 @@ const queryClient = new QueryClient({
 });
 
 // Use own api
-const AXIOS_URL = "http:localhost:5001/api/";
+const AXIOS_URL = "http:localhost:5001/api";
 export { AXIOS_URL, queryClient };

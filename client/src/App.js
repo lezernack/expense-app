@@ -19,7 +19,7 @@ import Settings from "./pages/Settings.jsx";
 import Profile from "./pages/Profile.jsx";
 import TransactionsRoot from ".pages/TransactionsRoot";
 
-//Transactions Subpages
+//TRANSACTIONS SUBPAGES
 import TransactionCreate from "./components/TransactionComponents/TransactionCreate.jsx";
 import TransactionDelete from "./components/TransactionComponents/TransactionDelete.jsx";
 
@@ -82,6 +82,7 @@ function App() {
             </Routes>
           </PageContainer>
         </AuthGuard>
+        <ReactQueryDevtools />
       </QueryClientProvider>
     </div>
   );

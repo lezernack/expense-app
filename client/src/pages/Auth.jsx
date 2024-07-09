@@ -1,4 +1,4 @@
-import styles from "../styles/Auth.module.scss";
+import styles from ".../styles/Auth.module.scss";
 import MainContainer from "../components/Containers/MainContainer.jsx";
 import { Title } from "../components/Titles/Titles.jsx";
 import { useState } from "react";

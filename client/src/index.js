@@ -1,8 +1,7 @@
-import { createReact } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
-import { Router } from "express";
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./App.js";
 
 // if you are running the intercept file in components,
 // You will need to uncomment the code below and comment the lines 18-26.
