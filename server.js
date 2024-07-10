@@ -21,7 +21,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 //SERVER CLIENT FOLDER IE REACT BUILD
-app.use(express.static(path.join(__dirname, "clientBuild")));
+app.use(express.static(path.join(__dirname, "client")));
 
 //CORS
 //ADD YOUR URL HERE
@@ -60,7 +60,7 @@ app.use("/api", userRoutes);
 app.use("/api", transactionRoutes);
 app.use("/api", categoriesRoutes);
 app.use("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "clientBuild", "index.html"));
+  res.sendFile(path.join(__dirname, "client/public", "index.html"));
 });
 
 app.listen(port, () => {
