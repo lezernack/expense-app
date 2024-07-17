@@ -9,7 +9,7 @@ import PageContainer from "./components/Containers/PageContainer.jsx";
 import MainContainer from "./components/Containers/MainContainer.jsx";
 import PageLayout from "./components/PageLayout.jsx";
 import AuthGuard from "./components/AuthGuard.jsx";
-// import Interceptor from "./components/Interceptor";
+import Interceptor from "./components/Interceptor";
 
 //PAGES
 import Auth from "./pages/Auth.jsx";
@@ -38,7 +38,7 @@ function App() {
   return (
     <div className={styles.App}>
       <QueryClientProvider client={queryClient}>
-        {/* <Interceptor /> */}
+        <Interceptor />
         <AuthGuard>
           <PageContainer optionClass={styles.PageContainer}>
             <Routes>
